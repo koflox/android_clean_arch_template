@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CleanArch</string>
+    <string name="title_rates">Rates</string>
+    <string name="text_no_network">No network. Outdated results may be shown</string>
+    <string name="text_rates_general_error_desc">Error occurred. Outdated results may be shown</string>
+    <string name="text_hello_clean_architecture">Hello Clean Architecture</string>
+</resources>
