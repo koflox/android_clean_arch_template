@@ -1,0 +1,21 @@
+name: android build
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: jdk setup
+        uses: actions/setup-java@v1.4.3
+        with:
+          java-version: 1.8
+      - name: run test
+        run: bash ./gradlew test
+      - name: build via gradle
+        run: bash ./gradlew build
